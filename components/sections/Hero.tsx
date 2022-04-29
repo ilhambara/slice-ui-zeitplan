@@ -1,5 +1,4 @@
 import * as React from "react";
-import NextImage from "next/image";
 import { Box, Container, Heading, Stack, Text, VStack, Button, ButtonGroup, Image } from "@chakra-ui/react";
 
 export const Hero: React.FC = () => {
