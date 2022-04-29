@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "BaraJS.extension-pack", // optional
+    "dbaeumer.vscode-eslint", // must have
+    "esbenp.prettier-vscode" // must have
+  ]
+}
