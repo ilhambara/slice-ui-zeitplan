@@ -13,6 +13,11 @@ const theme = extendTheme({
     heading: "Patua One, sans-serif",
     body: "Source Sans Pro, sans-serif",
   },
+  sizes: {
+    container: {
+      lg: "1168px",
+    },
+  },
   // colors: {
   //   yellow: {
   //     300: "#FCF24A",

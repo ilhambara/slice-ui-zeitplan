@@ -1,3 +1,4 @@
+import "../styles/globals.css";
 import theme from "../theme/theme";
 import "@fontsource/patua-one";
 import "@fontsource/source-sans-pro";
