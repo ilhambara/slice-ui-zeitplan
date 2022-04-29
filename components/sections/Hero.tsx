@@ -34,8 +34,8 @@ export const Hero: React.FC = () => {
               </Box>
             </VStack>
 
-            <Box w="50%">
-              <NextImage src="/img/hero-img.png" width={580} height={652} quality={90} alt="Home image" />
+            <Box w="50%" width={580} height={652}>
+              <Image src="/img/hero-img.png" alt="Home image" />
             </Box>
           </Stack>
         </Container>
