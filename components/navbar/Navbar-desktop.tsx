@@ -6,7 +6,7 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 export const NavbarDesktop: React.FC = () => {
   return (
     <>
-      <Container as="header" maxW="container.lg" pos="sticky" top={0} pt={8}>
+      <Container as="header" maxW="container.lg" pos="sticky" top={0} zIndex={999} pt={8}>
         <Stack
           as="nav"
           direction="row"
@@ -52,7 +52,7 @@ export const NavbarDesktop: React.FC = () => {
             </NextLink>
 
             {/* Download Button */}
-            <NextLink href="#" passHref>
+            <NextLink href="#download" passHref>
               <Button
                 as="a"
                 rightIcon={<ArrowForwardIcon />}

@@ -18,11 +18,11 @@ const theme = extendTheme({
       lg: "1168px",
     },
   },
-  // colors: {
-  //   yellow: {
-  //     300: "#FCF24A",
-  //   },
-  // },
+  colors: {
+    gray: {
+      800: "#0E144A",
+    },
+  },
   config,
 });
 
