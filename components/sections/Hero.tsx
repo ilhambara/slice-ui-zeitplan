@@ -6,9 +6,9 @@ export const Hero: React.FC = () => {
     <>
       <Box id="home">
         <Container maxW="container.lg" minH="90vh">
-          <Stack direction="row" h="fit-content" align="center" py={12}>
-            <VStack w="50%" align="left" spacing={12}>
-              <VStack align="left" pr={8} spacing="8">
+          <Stack direction="row" h="fit-content" align="center" justify="space-between" py={12}>
+            <VStack w={501} align="left" spacing={12}>
+              <VStack align="left" spacing="8">
                 <Heading as="h1" fontSize="5xl" fontWeight="400" textColor="gray.800">
                   Sebuah cara mudah mengatur jadwal kuliah kamu
                 </Heading>
@@ -29,12 +29,12 @@ export const Hero: React.FC = () => {
               </VStack>
 
               <Box w="501px" h="253px" pos="relative" left={-12}>
-                <Image src="/img/hero-card-svg.svg" alt="Home card" />
+                <Image src="/img/home/hero-card.svg" alt="Home card" />
               </Box>
             </VStack>
 
-            <Box w="50%" width={580} height={652}>
-              <Image src="/img/hero-img.png" alt="Home image" />
+            <Box w="50%" width={579} height={652}>
+              <Image src="/img/home/hero-img.svg" alt="Home image" />
             </Box>
           </Stack>
         </Container>
