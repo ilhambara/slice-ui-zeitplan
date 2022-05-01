@@ -1,0 +1,47 @@
+[
+  {
+    "id": 3,
+    "title": "Rp 10000K",
+    "desc": "Ini juga sama aja, data lo dijual juga. Tapi fitur-fiturnya lebih ok.",
+    "tag": "RAFATAR",
+    "benefit": [
+      "Semua Fitur Sebelumnya",
+      "Dibayarin Kuliah 4 Semester",
+      "Dibayarin Cicilan Motor",
+      "Dicicilin KPR 12 Tahun",
+      "Magang di NASA Cab. Depok",
+      "Dapet Skin Alok",
+      "Nonton Film Gratis di Ganool",
+      "Naik Haji Bila Mampu"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Rp 100K",
+    "desc": "Sama aja data lo juga tetep dijual, tapi lo dapet fitur yang lain.",
+    "tag": "SULTAN",
+    "benefit": [
+      "Semua Fitur Sebelumnya",
+      "Diingetin Makan",
+      "Sleepcall Sampe Bobo",
+      "Ditemenin Jalan Tiap Minggu",
+      "Ditemenin Nonton Eksekswan",
+      "Terhindar Razia Rambut",
+      "Dapet Izin Bikin Ormas"
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Free",
+    "desc": "Akses ke semua fitur gratis tapi data lo dijual ke agen khusus US.",
+    "tag": "RINDURATU",
+    "benefit": [
+      "Jadwal Tak Terbatas",
+      "Fitur Notifikasi (Kadang Telat)",
+      "Mode Gelap",
+      "Bisa Topup Pulsa",
+      "Bisa Beli Token Listrik",
+      "Data Lo Dijual"
+    ]
+  }
+]
