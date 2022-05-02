@@ -15,7 +15,15 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import { TimeIcon } from "@chakra-ui/icons";
+import { IconType } from "react-icons/lib";
+import { FiInstagram, FiFacebook, FiTwitter } from "react-icons/fi";
+import { Extender } from "./Extender";
+
+const NAV_SOCIAL_LINKS: [string, IconType][] = [
+  ["Instagram", FiInstagram],
+  ["Facebook", FiFacebook],
+  ["Twitter ", FiTwitter],
+];
 
 export const Footer: React.FC = () => {
   return (
@@ -49,7 +57,7 @@ export const Footer: React.FC = () => {
                   Sitemap
                 </Heading>
 
-                <List fontWeight="semibold" textColor="#6D7694" spacing={3}>
+                <List fontWeight="semibold" textColor="gray.500" spacing={3}>
                   <ListItem>Beranda</ListItem>
                   <ListItem>Fitur-Fitur</ListItem>
                   <ListItem>Harga</ListItem>
@@ -63,7 +71,7 @@ export const Footer: React.FC = () => {
                   Partner
                 </Heading>
 
-                <List fontWeight="semibold" textColor="#6D7694" spacing={3}>
+                <List fontWeight="semibold" textColor="gray.500" spacing={3}>
                   <ListItem>Sefan.ru</ListItem>
                   <ListItem>Ganool</ListItem>
                   <ListItem>Waptrick</ListItem>
@@ -82,44 +90,26 @@ export const Footer: React.FC = () => {
               <Text textColor="gray.500">Lihat kami pansos di sosial media berikut:</Text>
 
               <Grid templateColumns="repeat(3, 1fr)" gap={4}>
-                <GridItem>
-                  <IconButton
-                    aria-label={`icon`}
-                    icon={<Icon as={TimeIcon} w={8} h={8} />}
-                    w={10}
-                    h={10}
-                    color="orange.400"
-                    variant="ghost"
-                    borderRadius="full"
-                  />
-                </GridItem>
-                <GridItem>
-                  <IconButton
-                    aria-label={`icon`}
-                    icon={<Icon as={TimeIcon} w={8} h={8} />}
-                    w={10}
-                    h={10}
-                    color="orange.400"
-                    variant="ghost"
-                    borderRadius="full"
-                  />
-                </GridItem>
-                <GridItem>
-                  <IconButton
-                    aria-label={`icon`}
-                    icon={<Icon as={TimeIcon} w={8} h={8} />}
-                    w={10}
-                    h={10}
-                    color="orange.400"
-                    variant="ghost"
-                    borderRadius="full"
-                  />
-                </GridItem>
+                {NAV_SOCIAL_LINKS.map(([label, AsIcon]) => (
+                  <GridItem key={label}>
+                    <IconButton
+                      aria-label={label}
+                      icon={<Icon as={AsIcon} boxSize={6} />}
+                      w={12}
+                      h={12}
+                      color="#FE5E44"
+                      bgColor="#FFF7F5"
+                      borderRadius="full"
+                    />
+                  </GridItem>
+                ))}
               </Grid>
             </VStack>
           </Stack>
         </Container>
       </Box>
+
+      <Extender />
     </>
   );
 };
