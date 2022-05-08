@@ -7,10 +7,10 @@ import { FiGlobe } from "react-icons/fi";
 export const Extender: React.FC = () => {
   return (
     <>
-      <Box h={16} bg="gray.700">
+      <Box h={[20, 16]} bg="gray.700">
         <Container maxW="container.lg" h="full" display="flex" justifyContent="center" alignItems="center">
-          <Box>
-            <Text color="gray.200">
+          <Box maxW={["55%", "full"]}>
+            <Text fontSize={["sm", "md"]} color="gray.200">
               Sliced using{" "}
               <Link href="https://nextjs.org/" color="blue.200" isExternal>
                 Next.js
