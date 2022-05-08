@@ -1,9 +1,21 @@
 import * as React from "react";
+import { useRouter } from "next/router";
 import NextLink from "next/link";
 import { Button, Container, HStack, Image, Stack, Spacer, Link } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
+import config from "../../config/siteConfig";
+
+const NAV_LINKS = [
+  ["home", config.navlink.Home],
+  ["fitur-fitur", config.navlink.Fitur],
+  ["harga", config.navlink.Harga],
+  ["testimoni", config.navlink.Testimoni],
+];
 
 export const NavbarDesktop: React.FC = () => {
+  const router = useRouter();
+  const isActive = router.asPath;
+
   return (
     <>
       <Container as="header" maxW="container.lg" pos="sticky" top={0} zIndex={999} pt={8}>
@@ -27,29 +39,19 @@ export const NavbarDesktop: React.FC = () => {
           <Spacer />
 
           <HStack>
-            <NextLink href="/" passHref>
-              <Button as="a" variant="ghost" color="#FE5E44">
-                Home
-              </Button>
-            </NextLink>
-
-            <NextLink href="#fitur-fitur" passHref>
-              <Button as="a" variant="ghost" color="gray.400" fontWeight="regular">
-                Fitur-Fitur
-              </Button>
-            </NextLink>
-
-            <NextLink href="#harga" passHref>
-              <Button as="a" variant="ghost" color="gray.400" fontWeight="regular">
-                Harga
-              </Button>
-            </NextLink>
-
-            <NextLink href="#testimoni" passHref>
-              <Button as="a" variant="ghost" color="gray.400" fontWeight="regular">
-                Testimoni
-              </Button>
-            </NextLink>
+            {NAV_LINKS.map(([nav, href]) => (
+              <NextLink key={nav} href={href} passHref>
+                <Button
+                  as="a"
+                  variant="ghost"
+                  textTransform="capitalize"
+                  color={isActive === href ? "#FE5E44" : "gray.400"}
+                  fontWeight={isActive === href ? "semibold" : "regular"}
+                >
+                  {nav}
+                </Button>
+              </NextLink>
+            ))}
 
             {/* Download Button */}
             <NextLink href="#download" passHref>

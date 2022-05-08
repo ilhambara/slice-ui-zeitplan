@@ -11,7 +11,16 @@ export const Extender: React.FC = () => {
         <Container maxW="container.lg" h="full" display="flex" justifyContent="center" alignItems="center">
           <Box>
             <Text color="gray.200">
-              Sliced using Next.js and Chakra UI. See the source code{" "}
+              Sliced using{" "}
+              <Link href="https://nextjs.org/" color="blue.200" isExternal>
+                Next.js
+              </Link>{" "}
+              and{" "}
+              <Link href="https://chakra-ui.com/ " color="blue.200" isExternal>
+                Chakra UI
+              </Link>
+              {". "}
+              See the source code{" "}
               <Link href="https://github.com/ilhambara/slice-ui-zeitplan" color="blue.200" isExternal>
                 here
               </Link>
@@ -21,7 +30,7 @@ export const Extender: React.FC = () => {
 
           <Spacer />
 
-          <ButtonGroup spacing={1}>
+          <ButtonGroup>
             <NextLink href="https://github.com/ilhambara" passHref>
               <IconButton
                 as="a"
