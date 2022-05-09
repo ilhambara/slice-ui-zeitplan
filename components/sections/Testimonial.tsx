@@ -6,7 +6,7 @@ export const Testimonial: React.FC = () => {
   return (
     <>
       <Box id="testimoni" as="section" bgColor="#FFEFED">
-        <Container maxW="container.lg" minH="100vh" w="full" pt={["80px", "150px"]}>
+        <Container maxW="container.lg" minH="100vh" w="full" py={["80px", "150px"]}>
           <VStack spacing={[6, 10]} textAlign="center" align="center">
             <Box maxW={567}>
               <Heading as="h1" fontSize={["2xl", "4xl"]} fontWeight="400">

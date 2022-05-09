@@ -13,6 +13,11 @@ const theme = extendTheme({
     heading: "Patua One, sans-serif",
     body: "Source Sans Pro, sans-serif",
   },
+  textStyles: {
+    testiCard: {
+      fontFamily: "Poppins, sans-serif",
+    },
+  },
   sizes: {
     container: {
       lg: "1168px",
