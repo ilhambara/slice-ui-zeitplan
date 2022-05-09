@@ -13,7 +13,7 @@ export const TestimonialCard: React.FC = () => {
               {testimonial.slice(i * 2, i * 2 + 2).map((rate) => (
                 <VStack
                   key={rate.id}
-                  maxW={["90%", 370]}
+                  maxW={["92%", 370]}
                   h="fit-content"
                   align="start"
                   bgColor="white"
@@ -49,7 +49,7 @@ export const TestimonialCard: React.FC = () => {
                   </Box>
 
                   <HStack spacing={5}>
-                    <Avatar size="55px" src={rate.avatar} />
+                    <Avatar src={rate.avatar} />
                     <VStack align="start" spacing={1}>
                       <Text fontWeight="semibold" textStyle="testiCard">
                         {rate.name}
