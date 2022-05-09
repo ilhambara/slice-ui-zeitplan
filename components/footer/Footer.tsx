@@ -29,7 +29,7 @@ export const Footer: React.FC = () => {
   return (
     <>
       <Box as="footer" bgColor="white">
-        <Container maxW="container.lg" minH={428} w="full" pt={["50px", "150px"]} pb={["50px", 0]}>
+        <Container maxW="container.lg" minH={428} w="full" pt={[0, "150px"]} pb={["50px", 0]}>
           <Divider my={[4, 8]} />
           <Stack
             direction={["column", "row"]}

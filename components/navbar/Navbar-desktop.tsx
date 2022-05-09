@@ -32,7 +32,7 @@ export const NavbarDesktop: React.FC = () => {
         >
           <NextLink href="/" passHref>
             <Link>
-              <Image src="img/nav-logo.png" h="40px" w="auto" alt="Zeitplan logo" />
+              <Image src="img/nav-logo.svg" h="40px" w="auto" alt="Zeitplan logo" />
             </Link>
           </NextLink>
 

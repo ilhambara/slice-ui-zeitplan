@@ -46,7 +46,7 @@ export const NavbarMobile: React.FC = () => {
         >
           <NextLink href="/" passHref>
             <Link>
-              <Image src="img/logo.svg" h={["32px", "40px"]} w="auto" alt="Zeitplan logo" />
+              <Image src="img/nav-logo.svg" h={["32px", "40px"]} w="auto" alt="Zeitplan logo" />
             </Link>
           </NextLink>
 
