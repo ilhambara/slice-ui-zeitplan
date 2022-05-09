@@ -7,7 +7,7 @@ export const Features: React.FC = () => {
   return (
     <>
       <Box id="fitur-fitur" as="section" bgColor="white">
-        <Container maxW="container.lg" minH="100vh" w="full" pt="150px">
+        <Container maxW="container.lg" minH="100vh" w="full" pt={["80px", "150px"]}>
           <VStack spacing={20} h="full" textAlign="left" align="start" justify="space-evenly">
             <PrimaryFeat />
             <SecondaryFeat />

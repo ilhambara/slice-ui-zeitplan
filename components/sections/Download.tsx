@@ -4,15 +4,15 @@ import { Box, ButtonGroup, Container, Heading, Image, Text, VStack } from "@chak
 export const Download: React.FC = () => {
   return (
     <>
-      <Box id="download" as="section" h={422} w="full" bgColor="white">
-        <Container maxW="container.lg" pt="150px">
+      <Box id="download" as="section" h={["fit-content", 422]} w="full" bgColor="white">
+        <Container maxW="container.lg" pt={["80px", "150px"]} pb={["80px", 0]}>
           <VStack spacing={12} textAlign="center" align="center">
-            <Heading as="h1" fontWeight="400">
+            <Heading as="h1" fontSize={["3xl", "4xl"]} fontWeight="400">
               Download Aplikasi Keren Ini Sekarang!
             </Heading>
 
             <Box maxW={761}>
-              <Text fontSize="xl" textColor="gray.500">
+              <Text fontSize={["lg", "xl"]} textColor="gray.500">
                 Please download lah aplikasi ini, udah susah-susah buat, mana pas bikin sampe begadang, terus juga
                 ditambah weekend. Jadi, please download lah ya.
               </Text>

@@ -1,24 +1,33 @@
 import * as React from "react";
 import { Box, Divider, Flex, Grid, Heading, HStack, Icon, Stack, Text, VStack } from "@chakra-ui/react";
 import { FiDatabase, FiWifiOff, FiUser, FiCode } from "react-icons/fi";
+import { IconType } from "react-icons";
+import featOne from "../../data/features-1.json";
+
+const FEAT_ONE: [string, string, IconType][] = [
+  [featOne[0].title, featOne[0].desc, FiDatabase],
+  [featOne[1].title, featOne[1].desc, FiWifiOff],
+  [featOne[2].title, featOne[2].desc, FiUser],
+  [featOne[3].title, featOne[3].desc, FiCode],
+];
 
 export const PrimaryFeat: React.FC = () => {
   return (
     <>
-      <Stack direction="row" w="full" h={508} justify="space-between">
-        <VStack spacing={16} w={369} h="full" textAlign="left" align="start" justify="center">
-          <VStack spacing={8}>
-            <Heading as="h1" fontWeight="400">
+      <Stack direction={["column", "row"]} w="full" h={["full", 508]} justify="space-between" spacing={[8, 0]}>
+        <VStack spacing={[12, 16]} w={["full", 369]} h="full" textAlign="left" align="start" justify="center">
+          <VStack spacing={[6, 8]}>
+            <Heading as="h1" fontSize={["2xl", "4xl"]} fontWeight="400">
               Kenapa Kamu Sangat Harus Pakai Aplikasi Yang Keren Ini?
             </Heading>
 
-            <Text fontSize="lg" textColor="gray.500">
+            <Text fontSize={["md", "lg"]} textColor="gray.500">
               Sejujurnya aplikasi kita ini seringkali bermasalah. Kadang-kadang gak bisa submit data, kadang dibukanya
               lambat, kadang tiba-tiba logout sendiri, untung gak berdua.
             </Text>
           </VStack>
 
-          <HStack direction="row" justify="space-between" w="325px" h="52px">
+          <HStack direction="row" justify={["space-evenly", "space-between"]} w={["full", "325px"]} h="52px">
             <Box>
               <Text fontSize="xs" textColor="gray.500">
                 TOTAL DON{"'"}TLOUD
@@ -41,68 +50,38 @@ export const PrimaryFeat: React.FC = () => {
           </HStack>
         </VStack>
 
-        <Grid w={669} h="full" templateColumns="repeat(2, 1fr)" gap={6}>
-          <VStack align="left" minH={239} bg="#FFF7F5" borderRadius={6} p={10}>
-            <HStack spacing={4}>
-              <Flex align="center" justify="center" w={50} h={50} bg="#FFD9D2" borderRadius={6}>
-                <Icon as={FiDatabase} w={6} h={6} color="#FE5E44" />
-              </Flex>
+        <Grid w={["full", 669]} templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)"]} gap={6}>
+          {FEAT_ONE.map(([title, desc, AsIcon]) => (
+            <VStack
+              key={title}
+              align="left"
+              justify="center"
+              minH={["fit-content", 239]}
+              bg="#FFF7F5"
+              borderRadius={6}
+              p={[5, 10]}
+              spacing={[6, 4]}
+            >
+              <Stack direction="row" align="center" spacing={4}>
+                <Flex
+                  align="center"
+                  justify="center"
+                  w={["40px", "50px"]}
+                  h={["40px", "50px"]}
+                  bg="#FFD9D2"
+                  borderRadius={[4, 6]}
+                >
+                  <Icon as={AsIcon} boxSize={[5, 6]} color="#FE5E44" />
+                </Flex>
 
-              <Text fontSize="lg" fontWeight="semibold">
-                Aplikasi Gratis
-              </Text>
-            </HStack>
+                <Text fontSize="lg" fontWeight="semibold">
+                  {title}
+                </Text>
+              </Stack>
 
-            <Text pt={4}>
-              Semua fitur di aplikasi ini adalah gratis, tapi data privasi kamu akan kami jual ke agen khusus US.
-            </Text>
-          </VStack>
-
-          <VStack align="left" minH={239} bg="#FFF7F5" borderRadius={6} p={10}>
-            <HStack spacing={4}>
-              <Flex align="center" justify="center" w={50} h={50} bg="#FFD9D2" borderRadius={6}>
-                <Icon as={FiWifiOff} w={6} h={6} color="#FE5E44" />
-              </Flex>
-
-              <Text fontSize="lg" fontWeight="semibold">
-                Kode OTP Error
-              </Text>
-            </HStack>
-
-            <Text pt={4}>Pas login kode OTP lo gak kekirim kadang, terus lo harus nyoba berulang kali sampe bisa.</Text>
-          </VStack>
-
-          <VStack align="left" minH={239} bg="#FFF7F5" borderRadius={6} p={10}>
-            <HStack spacing={4}>
-              <Flex align="center" justify="center" w={50} h={50} bg="#FFD9D2" borderRadius={6}>
-                <Icon as={FiUser} w={6} h={6} color="#FE5E44" />
-              </Flex>
-
-              <Text fontSize="lg" fontWeight="semibold">
-                Data Tidak Aman
-              </Text>
-            </HStack>
-
-            <Text pt={4}>
-              Data tidak disimpan dengan baik dan rentan bocor, jangan heran data lo tiba-tiba ada di deepweb.
-            </Text>
-          </VStack>
-
-          <VStack align="left" minH={239} bg="#FFF7F5" borderRadius={6} p={10}>
-            <HStack spacing={4}>
-              <Flex align="center" justify="center" w={50} h={50} bg="#FFD9D2" borderRadius={6}>
-                <Icon as={FiCode} w={6} h={6} color="#FE5E44" />
-              </Flex>
-
-              <Text fontSize="lg" fontWeight="semibold">
-                Biasanya Error
-              </Text>
-            </HStack>
-
-            <Text pt={4}>
-              Ketika submit data biasanya error di bagian ajax-nya, eh nggak deng itu aplikasi pemerintah~
-            </Text>
-          </VStack>
+              <Text fontSize={["sm", "md"]}>{desc}</Text>
+            </VStack>
+          ))}
         </Grid>
       </Stack>
     </>

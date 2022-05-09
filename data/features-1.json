@@ -1,0 +1,22 @@
+[
+  {
+    "id": 4,
+    "title": "Aplikasi Gratis",
+    "desc": "Semua fitur di aplikasi ini adalah gratis, tapi data privasi kamu akan kami jual ke agen khusus US."
+  },
+  {
+    "id": 3,
+    "title": "Kode OTP Error",
+    "desc": "Pas login kode OTP lo gak kekirim kadang, terus lo harus nyoba berulang kali sampe bisa."
+  },
+  {
+    "id": 2,
+    "title": "Data Tidak Aman",
+    "desc": "Data tidak disimpan dengan baik dan rentan bocor, jangan heran data lo tiba-tiba ada di deepweb."
+  },
+  {
+    "id": 1,
+    "title": "Biasanya Error",
+    "desc": "Ketika submit data biasanya error di bagian ajax-nya, eh nggak deng itu aplikasi (sensor)~"
+  }
+]

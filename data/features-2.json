@@ -1,0 +1,22 @@
+[
+  {
+    "id": 4,
+    "title": "Tidak Tersimpan Otomatis",
+    "desc": "Kalo lo pelupa ya udah dah, jadwal lo bakal gak kesimpen tuh."
+  },
+  {
+    "id": 3,
+    "title": "Si Rizal Gak Pernah Ngonten",
+    "desc": "Emang sih dia gak pernah ngonten, do’ain ya biar mau ngonten."
+  },
+  {
+    "id": 2,
+    "title": "Terhapus Otomatis",
+    "desc": "Data lo bakal kehapus otomatis tiap hari, biar hemat server kita."
+  },
+  {
+    "id": 1,
+    "title": "Nggak Tau Lagi Gw",
+    "desc": "Mikir teks buat konten susah bro, ini aja ngasal masih susah!"
+  }
+]
