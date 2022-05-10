@@ -1,33 +1,28 @@
-# A Boilerplate of Next.js and Chakra UI
+# The Zeitplan – Landing Page UI
 
-![project's preview](https://raw.githubusercontent.com/ilhambara/your-next-chakra/main/public/new-preview.png)
+<!-- ![project's preview](https://raw.githubusercontent.com/ilhambara/slice-ui-zeitplan/main/public/img/og-image.png) -->
 
-Here I made some basic setup for Next.js App. Including but not limited to:
+"Sebuah aplikasi yang membantu kamu untuk membuat jadwal kuliah, jadwal mabar, jadwal makan, jadwal liga inggris, dan jadwal-jadwal lainnya. Walaupun banyak error, setidaknya kami sudah berusaha semaksimal mungkin".
 
-- Next.js installs using `npx create-next-app@latest --ts`
-- ESLint setup with basic Google style guide
-- A minimal Prettier config
-- Recomended some (VSCode) extensions
-- Planning to add [husky](https://www.npmjs.com/package/husky) for the next update
-- And more...
+## Tech Stack
 
-Project details and explanations will be coming in **Bahasa Indonesia** very soon! 👀⏳
+- Next.js (with TypeScript)
+- Chakra UI
+- Cloudflare Pages
+- etc. (see `package.json` file for the details).
 
-## Install (using npm)
+Generated from (public template): [https://github.com/ilhambara/your-next-chakra](https://github.com/ilhambara/your-next-chakra).
 
-```bash
-npx create-next-app your-next-chakra --use-npm --example "https://github.com/ilhambara/your-next-chakra"
-```
+## Resources and Credit
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+For more information about this project, visit these following resources:
 
-Modify or remove the styles in `pages/index.tsx`. The page auto-updates as you edit the file.
-
-## References
-
-To learn more about this Next.js, take a look at the following resources:
+### Resources
 
 - [Next.js Docs](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Chakra UI Docs](https://chakra-ui.com/guides/getting-started/nextjs-guide) - setup Chakra UI for Next App.
-- [ESLint Docs](https://eslint.org/docs/user-guide/configuring/configuration-files) - configuration in ESLint.
-- [GitHub repo: @jarrodwatts](https://github.com/jarrodwatts/code-like-google) - source code reference.
+- [Cloudflare Pages](https://pages.cloudflare.com) - JAMstack platform for frontend developers to collaborate and deploy websites.
+
+### Credit
+
+- [Figma Community: @mhd](https://www.figma.com/@mhd) - the creator of ui design.
