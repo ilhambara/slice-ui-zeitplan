@@ -32,7 +32,15 @@ export const NavbarMobile: React.FC = () => {
 
   return (
     <>
-      <Container as="header" maxW="container.lg" pos="sticky" top={0} zIndex={999} pt={[4, 8]}>
+      <Container
+        display={["block", "none"]}
+        as="header"
+        maxW="container.lg"
+        pos="sticky"
+        top={0}
+        zIndex={999}
+        pt={[4, 8]}
+      >
         <Stack
           as="nav"
           direction="row"

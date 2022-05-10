@@ -19,8 +19,8 @@ export const Download: React.FC = () => {
             </Box>
 
             <ButtonGroup spacing={4} pt={[6, 0]}>
-              <Image src="/img/download-ios.svg" alt="CTA download IOS" />
-              <Image src="/img/download-android.svg" alt="CTA download Android" />
+              <Image src="/img/download-ios.svg" alt="CTA download IOS" cursor="pointer" />
+              <Image src="/img/download-android.svg" alt="CTA download Android" cursor="pointer" />
             </ButtonGroup>
           </VStack>
         </Container>

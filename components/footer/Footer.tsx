@@ -9,6 +9,7 @@ import {
   Icon,
   IconButton,
   Image,
+  Link,
   List,
   ListItem,
   Stack,
@@ -16,7 +17,8 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { IconType } from "react-icons/lib";
-import { FiInstagram, FiFacebook, FiTwitter } from "react-icons/fi";
+import { FiFacebook, FiFigma, FiInstagram, FiTwitter } from "react-icons/fi";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Extender } from "./Extender";
 
 const NAV_SOCIAL_LINKS: [string, IconType][] = [
@@ -28,7 +30,7 @@ const NAV_SOCIAL_LINKS: [string, IconType][] = [
 export const Footer: React.FC = () => {
   return (
     <>
-      <Box as="footer" bgColor="white">
+      <Box as="footer" w="full" bgColor="white">
         <Container maxW="container.lg" minH={428} w="full" pt={[0, "150px"]} pb={["50px", 0]}>
           <Divider my={[4, 8]} />
           <Stack
@@ -39,7 +41,7 @@ export const Footer: React.FC = () => {
             py={[8, 16]}
             spacing={[10, 0]}
           >
-            <VStack spacing={6} maxW={432} textAlign="left" align="start">
+            <VStack maxW={432} textAlign="left" align="start" spacing={6}>
               <Box>
                 <Image src="/img/logo.svg" alt="logo zeitplan" />
                 <Heading as="h1" fontSize={["xl", "2xl"]} fontWeight="400" pt={4}>
@@ -54,7 +56,10 @@ export const Footer: React.FC = () => {
               </Text>
 
               <Text fontSize={["sm", "md"]} fontWeight="semibold" textColor="gray.500">
-                COPYRIGHT (C) 2021. DESIGN BY NAUVAL
+                COPYRIGHT (C) 2021.{" "}
+                <Link href="https://twitter.com/mhdnauvalazhar" isExternal>
+                  DESIGN BY NAUVAL <ExternalLinkIcon mb="4px" mx="2px" />
+                </Link>
               </Text>
             </VStack>
 
@@ -98,20 +103,33 @@ export const Footer: React.FC = () => {
                 Lihat kami pansos di sosial media berikut:
               </Text>
 
-              <Grid templateColumns="repeat(3, 1fr)" gap={4}>
+              <Grid templateColumns="repeat(4, 1fr)" gap={[5, 4]}>
                 {NAV_SOCIAL_LINKS.map(([label, AsIcon]) => (
                   <GridItem key={label}>
                     <IconButton
                       aria-label={label}
-                      icon={<Icon as={AsIcon} boxSize={[5, 6]} />}
-                      w={[10, 12]}
-                      h={[10, 12]}
+                      icon={<Icon as={AsIcon} boxSize={6} />}
+                      w={12}
+                      h={12}
                       color="#FE5E44"
                       bgColor="#FFF7F5"
                       borderRadius="full"
                     />
                   </GridItem>
                 ))}
+                <GridItem>
+                  <Link href="https://www.figma.com/@mhd" isExternal>
+                    <IconButton
+                      aria-label="Figma"
+                      icon={<Icon as={FiFigma} boxSize={6} />}
+                      w={12}
+                      h={12}
+                      color="#FE5E44"
+                      bgColor="#FFF7F5"
+                      borderRadius="full"
+                    />
+                  </Link>
+                </GridItem>
               </Grid>
             </VStack>
           </Stack>

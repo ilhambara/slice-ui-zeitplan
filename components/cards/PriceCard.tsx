@@ -28,15 +28,13 @@ export const PriceCard: React.FC = () => {
                     <Heading as="h3" fontSize={["3xl", "4xl"]} fontWeight="400" pb={4}>
                       {price.title}
                     </Heading>
-                    <Text fontSize={["md", "lg"]} textColor="gray.500">
+                    <Text fontSize="lg" textColor="gray.500">
                       {price.desc}
                     </Text>
                   </Box>
 
                   <List spacing={[4, 5]}>
                     {price.benefit.map((item) => {
-                      // console.log(item[1]);
-
                       return (
                         <ListItem key={item} fontSize={["md", "lg"]}>
                           <ListIcon as={PriceIcon} w={5} h={5} color="green.500" mr={4} />

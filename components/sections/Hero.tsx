@@ -4,10 +4,10 @@ import { Box, Container, Heading, Stack, Text, VStack, Button, ButtonGroup, Imag
 export const Hero: React.FC = () => {
   return (
     <>
-      <Box id="home">
+      <Box id="home" as="section" w="full">
         <Container maxW="container.lg" minH="90vh">
           <Stack direction={["column-reverse", "row"]} h="fit-content" align="center" justify="space-between" py={12}>
-            <VStack w={["full", 501]} align="left" spacing={[6, 12]}>
+            <VStack w={["full", 501]} align="left" spacing={[10, 12]}>
               <VStack align="left" spacing={[4, 8]}>
                 <Heading as="h1" fontSize={["4xl", "5xl"]} fontWeight="400" textColor="gray.800">
                   Sebuah cara mudah mengatur jadwal kuliah kamu
@@ -47,7 +47,7 @@ export const Hero: React.FC = () => {
               </Box>
             </VStack>
 
-            <Box w={["full", "50%"]} width={[320, 579]} height={["auto", 652]}>
+            <Box w={["full", "50%"]} width={["90%", 579]} height={["auto", 652]}>
               <Image src="/img/home/hero-img.svg" alt="Home image" />
             </Box>
           </Stack>

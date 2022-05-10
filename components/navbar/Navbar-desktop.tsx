@@ -18,7 +18,7 @@ export const NavbarDesktop: React.FC = () => {
 
   return (
     <>
-      <Container as="header" maxW="container.lg" pos="sticky" top={0} zIndex={999} pt={8}>
+      <Container display={["none", "block"]} as="header" maxW="container.lg" pos="sticky" top={0} zIndex={999} pt={8}>
         <Stack
           as="nav"
           direction="row"

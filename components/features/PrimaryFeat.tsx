@@ -14,7 +14,7 @@ const FEAT_ONE: [string, string, IconType][] = [
 export const PrimaryFeat: React.FC = () => {
   return (
     <>
-      <Stack direction={["column", "row"]} w="full" h={["full", 508]} justify="space-between" spacing={[8, 0]}>
+      <Stack direction={["column", "row"]} w="full" h={["full", 508]} justify="space-between" spacing={[16, 0]}>
         <VStack spacing={[12, 16]} w={["full", 369]} h="full" textAlign="left" align="start" justify="center">
           <VStack spacing={[6, 8]}>
             <Heading as="h1" fontSize={["2xl", "4xl"]} fontWeight="400">
@@ -74,12 +74,12 @@ export const PrimaryFeat: React.FC = () => {
                   <Icon as={AsIcon} boxSize={[5, 6]} color="#FE5E44" />
                 </Flex>
 
-                <Text fontSize="lg" fontWeight="semibold">
+                <Text fontSize={["xl", "lg"]} fontWeight="semibold">
                   {title}
                 </Text>
               </Stack>
 
-              <Text fontSize={["sm", "md"]}>{desc}</Text>
+              <Text fontSize="md">{desc}</Text>
             </VStack>
           ))}
         </Grid>

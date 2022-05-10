@@ -20,9 +20,9 @@ export const SecondaryFeat: React.FC = () => {
         h={["full", 879]}
         align="center"
         justify="space-between"
-        spacing={[12, 0]}
+        spacing={[16, 0]}
       >
-        <Box h={["fit-content", 679]} pb={[20, 0]}>
+        <Box w={["90%", "fit-content"]} h={["fit-content", 679]} pb={[20, 0]}>
           <Image src="/img/fitur-img.svg" alt="Feature image" />
         </Box>
 
@@ -42,10 +42,10 @@ export const SecondaryFeat: React.FC = () => {
             {FEAT_TWO.map(([title, desc, AsIcon]) => (
               <VStack key={title} minH={141} align="left" spacing={4}>
                 <Icon as={AsIcon} boxSize={[8, 9]} color="#FE5E44" />
-                <Heading as="h6" fontSize={["md", "lg"]} fontWeight="400">
+                <Heading as="h6" fontSize="lg" fontWeight="400">
                   {title}
                 </Heading>
-                <Text fontSize={["sm", "md"]} textColor="gray.500">
+                <Text fontSize="md" textColor="gray.500">
                   {desc}
                 </Text>
               </VStack>

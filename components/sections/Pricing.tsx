@@ -5,7 +5,7 @@ import { PriceCard } from "../cards/PriceCard";
 export const Pricing: React.FC = () => {
   return (
     <>
-      <Box id="harga" as="section" bgColor="#FFF7F5">
+      <Box id="harga" as="section" w="full" bgColor="#FFF7F5">
         <Container maxW="container.lg" minH="100vh" w="full" py={["80px", "150px"]}>
           <VStack spacing={[6, 10]} textAlign="center" align="center">
             <Box maxW={[320, 540]}>
